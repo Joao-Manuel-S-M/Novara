@@ -589,3 +589,10 @@ h6,
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
+
+/* Quick fix: avoid horizontal scrollbar on small screens while we identify cause */
+@media (max-width: 575px) {
+    html, body {
+        overflow-x: hidden;
+    }
+}
